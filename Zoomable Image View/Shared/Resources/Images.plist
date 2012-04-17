@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Mats Sundin</string>
+		<key>prefix</key>
+		<string>mats_sundin</string>
+		<key>extension</key>
+		<string>jpg</string>
+		<key>width</key>
+		<integer>2832</integer>
+		<key>height</key>
+		<integer>4256</integer>
+		<key>fileSize</key>
+		<string>5 MB</string>
+		<key>tileSize</key>
+		<integer>256</integer>
+		<key>levelsOfDetail</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>First of Spring</string>
+		<key>prefix</key>
+		<string>first_of_spring</string>
+		<key>extension</key>
+		<string>png</string>
+		<key>width</key>
+		<integer>1920</integer>
+		<key>height</key>
+		<integer>1200</integer>
+		<key>fileSize</key>
+		<string>2.8 MB</string>
+		<key>tileSize</key>
+		<integer>256</integer>
+		<key>levelsOfDetail</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dundas Square in Toronto</string>
+		<key>prefix</key>
+		<string>dundas_square</string>
+		<key>extension</key>
+		<string>jpg</string>
+		<key>width</key>
+		<integer>1920</integer>
+		<key>height</key>
+		<integer>1200</integer>
+		<key>fileSize</key>
+		<string>961 KB</string>
+		<key>tileSize</key>
+		<integer>256</integer>
+		<key>levelsOfDetail</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Battlefield 3</string>
+		<key>prefix</key>
+		<string>battlefield_3</string>
+		<key>extension</key>
+		<string>jpg</string>
+		<key>width</key>
+		<integer>3840</integer>
+		<key>height</key>
+		<integer>2356</integer>
+		<key>fileSize</key>
+		<string>1.5 MB</string>
+		<key>tileSize</key>
+		<integer>256</integer>
+		<key>levelsOfDetail</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Louvre Museum Pyramid</string>
+		<key>prefix</key>
+		<string>louvre_museum_pyramid</string>
+		<key>extension</key>
+		<string>jpg</string>
+		<key>width</key>
+		<integer>10110</integer>
+		<key>height</key>
+		<integer>2397</integer>
+		<key>fileSize</key>
+		<string>7.4 MB</string>
+		<key>tileSize</key>
+		<integer>512</integer>
+		<key>levelsOfDetail</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>International Space Station</string>
+		<key>prefix</key>
+		<string>iss</string>
+		<key>extension</key>
+		<string>jpg</string>
+		<key>width</key>
+		<integer>6048</integer>
+		<key>height</key>
+		<integer>4032</integer>
+		<key>fileSize</key>
+		<string>1.3 MB</string>
+		<key>tileSize</key>
+		<integer>512</integer>
+		<key>levelsOfDetail</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Migrant Mother</string>
+		<key>prefix</key>
+		<string>migrant_mother</string>
+		<key>extension</key>
+		<string>jpg</string>
+		<key>width</key>
+		<integer>6205</integer>
+		<key>height</key>
+		<integer>8066</integer>
+		<key>fileSize</key>
+		<string>5.7 MB</string>
+		<key>tileSize</key>
+		<integer>512</integer>
+		<key>levelsOfDetail</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Riveting Team</string>
+		<key>prefix</key>
+		<string>riveting_team</string>
+		<key>extension</key>
+		<string>jpg</string>
+		<key>width</key>
+		<integer>8406</integer>
+		<key>height</key>
+		<integer>6596</integer>
+		<key>fileSize</key>
+		<string>43.3 MB</string>
+		<key>tileSize</key>
+		<integer>1024</integer>
+		<key>levelsOfDetail</key>
+		<integer>2</integer>
+	</dict>
+</array>
+</plist>
