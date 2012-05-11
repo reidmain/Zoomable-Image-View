@@ -1,5 +1,6 @@
 #import "FDZoomableImageView.h"
 #import "FDTiledImageView.h"
+#import "UIScrollView+Layout.h"
 
 
 #pragma mark Class Extension
@@ -20,7 +21,6 @@
 
 - (void)_initializeZoomableImageView;
 - (void)_updateAspectFitZoomScale;
-- (void)_centreImageContainerInScrollView;
 - (void)_resizeScrollViewForImageContainer;
 - (void)_scrollViewDoubleTapped: (UITapGestureRecognizer *)doubleTapGestureRecognizer;
 
@@ -210,7 +210,7 @@
 	[self _resizeScrollViewForImageContainer];
 	
 	// Ensure the image container is centered inside the scroll view.
-	[self _centreImageContainerInScrollView];
+	[_scrollView centerZoomedView];
 }
 
 - (void)asyncLoadImageWithContentsOfFile: (NSString *)path 
@@ -259,8 +259,8 @@
 	// NOTE: On high resolutions screens (i.e. Retina displays) the contentScaleFactor of the tiled image view will 2.0 which will cause incorrect tiles to be loaded. We need to manually set the contentScaleFactor to 1.0 to ensure we load the correct tiles.
 	_tiledImageView.contentScaleFactor = 1.0;
 	
-	// Centre the image container inside the scroll view.
-	[self _centreImageContainerInScrollView];
+	// Center the image container inside the scroll view.
+	[_scrollView centerZoomedView];
 }
 
 - (void)setFrame: (CGRect)frame
@@ -353,31 +353,6 @@
 	}
 }
 
-- (void)_centreImageContainerInScrollView
-{
-	CGRect imagesContainerFrame = _imageContainer.frame;
-	
-    if (imagesContainerFrame.size.width < _scrollView.width)
-	{
-		imagesContainerFrame.origin.x = floorf((_scrollView.width - imagesContainerFrame.size.width) / 2.0f);
-	}
-    else
-	{
-		imagesContainerFrame.origin.x = 0.0f;
-	}
-    
-    if (imagesContainerFrame.size.height < _scrollView.height)
-	{
-		imagesContainerFrame.origin.y = floorf((_scrollView.height - imagesContainerFrame.size.height) / 2.0f);
-	}
-    else
-	{
-		imagesContainerFrame.origin.y = 0.0f;
-	}
-	
-	_imageContainer.frame = imagesContainerFrame;
-}
-
 - (void)_resizeScrollViewForImageContainer
 {
 	// Set the content size of the scroll view to be the same size as the image container
@@ -403,8 +378,8 @@
 	// Set the zoom scale of the scroll view so the image container will aspect fit inside it.
 	_scrollView.zoomScale = _aspectFitZoomScale;
 	
-	// Ensure the tiled image view is centered inside the scroll view.
-	[self _centreImageContainerInScrollView];
+	// Center the image container inside the scroll view.
+	[_scrollView centerZoomedView];
 }
 
 - (void)_scrollViewDoubleTapped: (UITapGestureRecognizer *)doubleTapGestureRecognizer;
@@ -440,13 +415,23 @@
 
 - (UIView *)viewForZoomingInScrollView: (UIScrollView *)scrollView
 {
-	return _imageContainer;
+	UIView *viewForZooming = nil;
+	
+	if (scrollView == _scrollView)
+	{
+		viewForZooming = _imageContainer;
+	}
+	
+	return viewForZooming;
 }
 
 - (void)scrollViewDidZoom: (UIScrollView *)scrollView
 {
-	// When the scroll view finishes zooming ensure the imag econtainer is centred inside it.
-	[self _centreImageContainerInScrollView];
+	// When the scroll view zooms, center the image container inside it.
+	if (scrollView == _scrollView)
+	{
+		[_scrollView centerZoomedView];
+	}
 }
 
 

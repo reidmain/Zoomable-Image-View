@@ -1292,6 +1292,7 @@
 		077495121525012900A2DA0C /* launch_ipad-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 077495111525012800A2DA0C /* launch_ipad-Landscape@2x.png */; };
 		077495141525016E00A2DA0C /* launch_ipad-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 077495131525016D00A2DA0C /* launch_ipad-Portrait@2x.png */; };
 		078CBA27152D2185004D4A56 /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 078CBA25152D2007004D4A56 /* NSObject+PerformBlock.m */; };
+		07CEDEB2155CADF900947768 /* UIScrollView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CEDEB1155CADF900947768 /* UIScrollView+Layout.m */; };
 		07F3F73B15031D5C00247B22 /* FDImageDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F3F73A15031D5B00247B22 /* FDImageDetails.m */; };
 /* End PBXBuildFile section */
 
@@ -2595,6 +2596,8 @@
 		077495131525016D00A2DA0C /* launch_ipad-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch_ipad-Portrait@2x.png"; sourceTree = "<group>"; };
 		078CBA24152D2007004D4A56 /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlock.h"; sourceTree = "<group>"; };
 		078CBA25152D2007004D4A56 /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
+		07CEDEB0155CADF900947768 /* UIScrollView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Layout.h"; sourceTree = "<group>"; };
+		07CEDEB1155CADF900947768 /* UIScrollView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Layout.m"; sourceTree = "<group>"; };
 		07D861A7153DA8F40067247F /* tile_slicer.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = tile_slicer.sh; sourceTree = "<group>"; };
 		07F3F73915031D5B00247B22 /* FDImageDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDImageDetails.h; sourceTree = "<group>"; };
 		07F3F73A15031D5B00247B22 /* FDImageDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDImageDetails.m; sourceTree = "<group>"; };
@@ -2956,6 +2959,8 @@
 			children = (
 				078CBA24152D2007004D4A56 /* NSObject+PerformBlock.h */,
 				078CBA25152D2007004D4A56 /* NSObject+PerformBlock.m */,
+				07CEDEB0155CADF900947768 /* UIScrollView+Layout.h */,
+				07CEDEB1155CADF900947768 /* UIScrollView+Layout.m */,
 				075471F415200F1000505AE4 /* UIView+Layout.h */,
 				075471F515200F1000505AE4 /* UIView+Layout.m */,
 			);
@@ -4213,8 +4218,9 @@
 		0715B11915005E8900DAF10C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FD;
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "";
+				ORGANIZATIONNAME = "1414 Degrees";
 			};
 			buildConfigurationList = 0715B11C15005E8900DAF10C /* Build configuration list for PBXProject "Zoomable Image View" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -5530,6 +5536,7 @@
 				07F3F73B15031D5C00247B22 /* FDImageDetails.m in Sources */,
 				075471F615200F1000505AE4 /* UIView+Layout.m in Sources */,
 				078CBA27152D2185004D4A56 /* NSObject+PerformBlock.m in Sources */,
+				07CEDEB2155CADF900947768 /* UIScrollView+Layout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
