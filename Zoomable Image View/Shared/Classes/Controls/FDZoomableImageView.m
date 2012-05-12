@@ -311,14 +311,15 @@
 	_scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth 
 		| UIViewAutoresizingFlexibleHeight;
 	
+	[self addSubview: _scrollView];
+	
+	// Configure the scroll view.
 	_scrollView.showsHorizontalScrollIndicator = NO;
 	_scrollView.showsVerticalScrollIndicator = NO;
 	_scrollView.alwaysBounceHorizontal = YES;
 	_scrollView.alwaysBounceVertical = YES;
 	
 	_scrollView.delegate = self;
-	
-	[self addSubview: _scrollView];
 	
 	// Create view that will house the image views.
 	_imageContainer = [[UIView alloc] 
@@ -384,7 +385,7 @@
 
 - (void)_scrollViewDoubleTapped: (UITapGestureRecognizer *)doubleTapGestureRecognizer;
 {
-	// If the scroll view's zoom scale is not the aspect fit zoom scale then set the zoom level to be it.
+	// If the scroll view's zoom scale is not the aspect fit zoom scale, set the zoom level to be it.
 	if (_scrollView.zoomScale != _aspectFitZoomScale)
 	{
 		[_scrollView setZoomScale: _aspectFitZoomScale 

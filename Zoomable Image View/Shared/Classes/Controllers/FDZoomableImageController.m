@@ -144,7 +144,7 @@
 	// Listen for single taps on the view.
 	UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] 
 		initWithTarget: self 
-			action: @selector(viewTapped)];
+			action: @selector(_viewTapped)];
 	
 	tapGestureRecognizer.numberOfTapsRequired = 1;
 	
