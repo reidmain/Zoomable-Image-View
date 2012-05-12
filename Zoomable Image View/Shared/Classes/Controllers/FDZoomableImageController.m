@@ -1,5 +1,6 @@
 #import "FDZoomableImageController.h"
 #import "FDZoomableImageView.h"
+#import "UIView+Layout.h"
 
 
 #pragma mark Class Extension

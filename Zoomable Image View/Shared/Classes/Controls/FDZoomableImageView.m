@@ -1,6 +1,8 @@
 #import "FDZoomableImageView.h"
 #import "FDTiledImageView.h"
+#import "NSObject+PerformBlock.h"
 #import "UIScrollView+Layout.h"
+#import "UIView+Layout.h"
 
 
 #pragma mark Class Extension
