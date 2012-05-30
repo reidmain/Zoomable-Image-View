@@ -4219,7 +4219,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FD;
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "1414 Degrees";
 			};
 			buildConfigurationList = 0715B11C15005E8900DAF10C /* Build configuration list for PBXProject "Zoomable Image View" */;
