@@ -1,9 +1,9 @@
 #import "FDImageDetails.h"
 
 
-#pragma mark Class Extension
+#pragma mark Class Definition
 
-@interface FDImageDetails ()
+@implementation FDImageDetails
 {
 	@private NSString *_name;
 	@private NSString *_prefix;
@@ -13,13 +13,6 @@
 	@private CGSize _tileSize;
 	@private NSUInteger _levelsOfDetail;
 }
-
-@end // @interface FDImageDetails ()
-
-
-#pragma mark Class Definition
-
-@implementation FDImageDetails
 
 
 #pragma mark -

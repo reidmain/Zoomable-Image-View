@@ -2,8 +2,6 @@
 
 @interface FDZoomableImageView : UIView<
 	UIScrollViewDelegate>
-{
-}
 
 
 #pragma mark -

@@ -4,8 +4,6 @@
 #pragma mark Class Interface
 
 @interface FDZoomableImageController : UIViewController
-{
-}
 
 
 #pragma mark -

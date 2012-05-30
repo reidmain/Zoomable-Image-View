@@ -6,8 +6,6 @@
 @interface FDImageListController : UIViewController<
 	UITableViewDataSource, 
 	UITableViewDelegate>
-{
-}
 
 
 #pragma mark -

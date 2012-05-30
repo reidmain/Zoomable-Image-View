@@ -1,9 +1,6 @@
 #pragma mark Class Interface
 
-
 @interface FDImageDetails : NSObject
-{
-}
 
 
 #pragma mark -

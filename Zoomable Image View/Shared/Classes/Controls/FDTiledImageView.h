@@ -1,8 +1,6 @@
 #pragma mark Class Interface
 
 @interface FDTiledImageView : UIView
-{
-}
 
 
 #pragma mark -

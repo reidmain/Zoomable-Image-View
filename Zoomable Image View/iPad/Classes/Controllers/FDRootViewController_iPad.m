@@ -5,12 +5,6 @@
 #pragma mark Class Extension
 
 @interface FDRootViewController_iPad ()
-{
-	@private FDZoomableImageController *_zoomableImageController;
-	@private UIPopoverController *_imageListPopoverController;
-	@private UIBarButtonItem *_imagesBarButtonItem;
-}
-
 
 - (void)_toggleImageListPopoverVisibility;
 
@@ -22,6 +16,11 @@
 #pragma mark Class Definition
 
 @implementation FDRootViewController_iPad
+{
+	@private FDZoomableImageController *_zoomableImageController;
+	@private UIPopoverController *_imageListPopoverController;
+	@private UIBarButtonItem *_imagesBarButtonItem;
+}
 
 
 #pragma mark -

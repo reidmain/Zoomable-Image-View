@@ -8,18 +8,6 @@
 #pragma mark Class Extension
 
 @interface FDZoomableImageView ()
-{
-	@private UIScrollView *_scrollView;
-	@private UIView *_imageContainer;
-	@private UIImageView *_imageView;
-	@private FDTiledImageView *_tiledImageView;
-	
-	@private UITapGestureRecognizer *_doubleTapGestureRecognizer;
-	
-	@private CGFloat _aspectFitZoomScale;
-	@private NSObject *_latestAsyncLoad;
-}
-
 
 - (void)_initializeZoomableImageView;
 - (void)_updateAspectFitZoomScale;
@@ -34,6 +22,17 @@
 #pragma mark Class Definition
 
 @implementation FDZoomableImageView
+{
+	@private UIScrollView *_scrollView;
+	@private UIView *_imageContainer;
+	@private UIImageView *_imageView;
+	@private FDTiledImageView *_tiledImageView;
+	
+	@private UITapGestureRecognizer *_doubleTapGestureRecognizer;
+	
+	@private CGFloat _aspectFitZoomScale;
+	@private NSObject *_latestAsyncLoad;
+}
 
 
 #pragma mark -

@@ -5,8 +5,6 @@
 
 @interface FDRootViewController_iPhone : UINavigationController<
 	FDImageListControllerDelegate>
-{
-}
 
 
 @end // @interface FDRootViewController_iPhone

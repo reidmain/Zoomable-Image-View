@@ -6,12 +6,6 @@
 #pragma mark Class Extension
 
 @interface FDZoomableImageController ()
-{
-	@private FDImageDetails *_imageDetails;
-	@private FDZoomableImageView *_zoomableImageView;
-	@private UIActivityIndicatorView *_activityIndicatorView;
-}
-
 
 - (void)_showImage;
 - (void)_viewTapped;
@@ -24,6 +18,11 @@
 #pragma mark Class Definition
 
 @implementation FDZoomableImageController
+{
+	@private FDImageDetails *_imageDetails;
+	@private FDZoomableImageView *_zoomableImageView;
+	@private UIActivityIndicatorView *_activityIndicatorView;
+}
 
 
 #pragma mark -

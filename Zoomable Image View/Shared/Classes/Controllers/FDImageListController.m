@@ -6,13 +6,6 @@
 #pragma mark Class Extension
 
 @interface FDImageListController ()
-{
-	@private UITableView *_tableView;
-	@private id<FDImageListControllerDelegate> _delegate;
-	
-	@private NSMutableArray *_imageDetails;
-}
-
 
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 
@@ -33,6 +26,12 @@ static NSString * const TableViewCellIdentifier = @"ImageListCell";
 #pragma mark Class Definition
 
 @implementation FDImageListController
+{
+	@private UITableView *_tableView;
+	@private id<FDImageListControllerDelegate> _delegate;
+	
+	@private NSMutableArray *_imageDetails;
+}
 
 
 #pragma mark -

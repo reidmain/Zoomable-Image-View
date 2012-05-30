@@ -6,6 +6,9 @@
 #pragma mark Class Definition
 
 @implementation AppDelegate
+{
+    @private UIWindow *_mainWindow;
+}
 
 
 #pragma mark -

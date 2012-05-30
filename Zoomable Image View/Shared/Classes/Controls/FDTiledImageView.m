@@ -6,11 +6,6 @@
 #pragma mark Class Extension
 
 @interface FDTiledImageView ()
-{
-	@private NSString *_imageNamePrefix;
-	@private NSString *_imageExtension;
-}
-
 
 - (void)_initializeTiledImageViewView;
 - (UIImage *)_tileForZoomLevel: (NSUInteger)zoomLevel 
@@ -26,6 +21,10 @@
 #pragma mark Class Definition
 
 @implementation FDTiledImageView
+{
+	@private NSString *_imageNamePrefix;
+	@private NSString *_imageExtension;
+}
 
 
 #pragma mark -
